@@ -1,0 +1,23 @@
+.header__form{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(238, 231, 231);
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20%;
+    border-top: 4px solid rgb(201, 197, 197);
+    &__input{
+        background-color: rgb(238, 231, 231);
+        border: none; /* autre solution : on enlève la classe dans l'élément input du html et on imbrique, nested combinatoire dans sass* mais augmente spécificité*/
+        margin-left: 15px;
+        padding-top: 2px;
+        color: rgb(94, 92, 92);
+        font-size: 17px;
+        font-weight: 900;
+
+    }
+}
+
+@include image-in-this-content(15px);
+
