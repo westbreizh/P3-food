@@ -3,6 +3,7 @@
     .container-image{
         width: $width;
         height: 100%;
+        min-width: 15px;
         img{
             object-fit: contain;
             width: 100%;

@@ -3,6 +3,39 @@ body {
   margin: 0px;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.h1__acceuil {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 20px;
+  margin-top: 0px;
+}
+
+.h2__presentation {
+  color: grey;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.a__presentation {
+  display: inline-block;
+  color: white;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+}
+
 header {
   padding-top: 30px;
 }
@@ -19,8 +52,7 @@ header img {
   background-color: #eee7e7;
   height: 50px;
   margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 20%;
+  padding-left: 26%;
   border-top: 4px solid #c9c5c5;
 }
 .header__form__input {
@@ -37,11 +69,19 @@ header img {
 .container-image {
   width: 15px;
   height: 100%;
+  min-width: 15px;
 }
 .container-image img {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.presentation {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  margin-bottom: 40px;
+  background-color: aliceblue;
 }
 
 /*# sourceMappingURL=style.css.map */

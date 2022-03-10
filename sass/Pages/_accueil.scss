@@ -4,8 +4,7 @@
     background-color:rgb(238, 231, 231);
     height: 50px;
     margin-top: 20px;
-    margin-bottom: 20px;
-    padding-left: 20%;
+    padding-left: 26%;
     border-top: 4px solid rgb(201, 197, 197);
     &__input{
         background-color: rgb(238, 231, 231);
@@ -15,9 +14,19 @@
         color: rgb(94, 92, 92);
         font-size: 17px;
         font-weight: 900;
-
     }
 }
 
 @include image-in-this-content(15px);
+
+.presentation{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+    background-color: aliceblue;
+}
+
+
+
+
 
