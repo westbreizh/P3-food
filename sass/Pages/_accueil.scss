@@ -1,15 +1,24 @@
 
-.presentation{
+.section__presentation{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     background-color:$colour-fourth;
 }
 
-.cards-restaurant{
-    background-color: $colour-fourth;
+.a{
+    &__presentation{
+        display: inline-block;
+        color:white;
+        background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+        padding: 15px;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
 }
+
+
 
 
 

@@ -1,8 +1,19 @@
+.section__cards-restaurant{
+    background-color: $colour-fourth;
+    padding-bottom: 70px;
+}
 
-.a__card-restaurant{
-    position: relative;
-    border-radius: 15px;
-    padding-bottom: 20px; 
+
+.a{
+    &__card-restaurant{
+        display: block;
+        position: relative;
+        margin: 20px;
+        border-radius: 15px;
+        padding-bottom: 20px;
+        margin-bottom: 0px; 
+        background-color: white;
+    }
 }
 
 
@@ -23,7 +34,6 @@
         object-position: 0px -50px;
     }
 }
-
 
 
 .img__preference {

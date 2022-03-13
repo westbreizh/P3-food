@@ -52,22 +52,7 @@ a{
     color: black;
 }
 
-.a{
-    &__presentation{
-        display: inline-block;
-        color:white;
-        background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
-        padding: 15px;
-        border-radius: 30px;
-        font-size: 1rem;
-    }
-    &__card-restaurant{
-        display: block;
-        position: relative;
-        margin: 20px;
-        background-color: white;
-    }
-}
+
 
 
 

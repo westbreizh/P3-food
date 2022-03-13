@@ -1,0 +1,27 @@
+footer{
+    background-color: #383838;
+    padding: 20px;
+    img{
+        height: 15px; 
+        width: 110px;
+        margin-bottom: 15px;
+    }
+}
+
+.a{
+    &__footer-with-logo{
+        display: flex;
+        color: white;
+        align-items: baseline;
+        img{
+            height: 15px;
+            width: 15px;
+            margin-right: 10px;
+        }
+    }
+    &__footer{
+        display:block;
+        color: white;
+        margin-bottom: 15px;
+    }
+}
