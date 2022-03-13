@@ -1,25 +1,51 @@
-@charset "UTF-8";
 body {
   margin: 0px;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  text-align: center;
 }
 
-.h1__acceuil {
-  font-size: 1.4rem;
+section {
+  padding-top: 40px;
+}
+
+h1, h2 {
+  font-size: 1.5rem;
   font-weight: 800;
-  margin: 20px;
-  margin-top: 0px;
+  margin: 0px 40px 20px 40px;
 }
 
-.h2__presentation {
-  color: grey;
+h2 {
+  margin: 0px 0px 20px 20px;
+}
+
+h3 {
   font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 40px;
+}
+
+.h3__presentation {
+  color: #acacac;
+  margin-bottom: 30px;
+}
+.h3__btn {
+  font-size: 1.1rem;
+  margin: 0px;
+  margin-left: 20px;
+}
+.h3__name-restaurant {
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 8px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.h3__locate-restaurant {
+  font-size: 17px;
+  font-weight: 250;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-bottom: 0px;
 }
 
 a {
@@ -33,7 +59,13 @@ a {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   padding: 15px;
   border-radius: 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+.a__card-restaurant {
+  display: block;
+  position: relative;
+  margin: 20px;
+  background-color: white;
 }
 
 header {
@@ -42,10 +74,10 @@ header {
 header img {
   display: block;
   width: 200px;
-  height: auto;
   margin: auto;
 }
 
+/*header accueil*/
 .header__form {
   display: flex;
   justify-content: center;
@@ -55,10 +87,13 @@ header img {
   padding-left: 26%;
   border-top: 4px solid #c9c5c5;
 }
-.header__form__input {
+.header__form img {
+  width: 20px;
+  height: 20px;
+}
+.header__form input {
   background-color: #eee7e7;
   border: none;
-  /* autre solution : on enlève la classe dans l'élément input du html et on imbrique, nested combinatoire dans sass* mais augmente spécificité*/
   margin-left: 15px;
   padding-top: 2px;
   color: #5e5c5c;
@@ -66,22 +101,86 @@ header img {
   font-weight: 900;
 }
 
-.container-image {
-  width: 15px;
-  height: 100%;
-  min-width: 15px;
-}
-.container-image img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
+.presentation {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  background-color: #f6f6f6;
 }
 
-.presentation {
-  padding-top: 40px;
-  padding-bottom: 60px;
-  margin-bottom: 40px;
-  background-color: aliceblue;
+.cards-restaurant {
+  background-color: #f6f6f6;
+}
+
+.bubble {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  margin-right: 15px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+}
+.btn img {
+  width: 20px;
+  height: auto;
+}
+
+.a__card-restaurant {
+  position: relative;
+  border-radius: 15px;
+  padding-bottom: 20px;
+}
+
+.container-img-restaurant {
+  height: 200px;
+  width: 100%;
+}
+.container-img-restaurant img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+
+.img--position1 {
+  object-position: 0px -50px;
+}
+
+.img__preference {
+  width: 25px;
+  height: auto;
+  position: absolute;
+  bottom: 35px;
+  left: 85%;
+}
+
+.new {
+  background-color: #8fe9d1;
+  color: #009b75;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 15px;
+  position: absolute;
+  bottom: 235px;
+  left: 68%;
 }
 
 /*# sourceMappingURL=style.css.map */

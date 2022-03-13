@@ -3,7 +3,30 @@ header{
     img{
     display: block;
     width: 200px;
-    height: auto;
     margin: auto;
+    }
+}
+
+/*header accueil*/
+.header__form{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(238, 231, 231);
+    height: 50px;
+    margin-top: 20px;
+    padding-left: 26%;
+    border-top: 4px solid rgb(201, 197, 197);
+    img{
+        width: 20px;
+        height: 20px;
+    }
+    input{
+        background-color: rgb(238, 231, 231);
+        border: none; 
+        margin-left: 15px;
+        padding-top: 2px;
+        color: rgb(94, 92, 92);
+        font-size: 17px;
+        font-weight: 900;
     }
 }

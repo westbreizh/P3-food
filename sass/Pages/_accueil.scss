@@ -1,31 +1,15 @@
-.header__form{
-    display: flex;
-    justify-content: center;
-    background-color:rgb(238, 231, 231);
-    height: 50px;
-    margin-top: 20px;
-    padding-left: 26%;
-    border-top: 4px solid rgb(201, 197, 197);
-    &__input{
-        background-color: rgb(238, 231, 231);
-        border: none; /* autre solution : on enlève la classe dans l'élément input du html et on imbrique, nested combinatoire dans sass* mais augmente spécificité*/
-        margin-left: 15px;
-        padding-top: 2px;
-        color: rgb(94, 92, 92);
-        font-size: 17px;
-        font-weight: 900;
-    }
-}
-
-@include image-in-this-content(15px);
 
 .presentation{
+    text-align: center;
     padding-top: 40px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     margin-bottom: 40px;
-    background-color: aliceblue;
+    background-color:$colour-fourth;
 }
 
+.cards-restaurant{
+    background-color: $colour-fourth;
+}
 
 
 
