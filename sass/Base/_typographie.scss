@@ -17,7 +17,12 @@ h1, h2{
         font-weight: 800;
         margin:0px 40px 20px 40px;
     }   
-
+.h1{
+    &__menu{
+    font-family: "Shrikhand", sans-serif;
+    margin:30px 0px 20px 15px;
+    }
+}
 h2{
     margin:0px 0px 20px 20px;
 }
@@ -36,20 +41,33 @@ h3{
         margin: 0px;
         margin-left: 20px;
     }  
-    &__name-restaurant{
+    &__name-restaurant, &__title-meal{
         font-size: 17px;
         font-weight: 900;
         margin-bottom: 8px;
         margin-left: 15px;
         margin-top: 10px;
     } 
-    &__locate-restaurant{
+    &__locate-restaurant, &__informations-meal{
         font-size: 17px;
         font-weight: 390;
         margin-top: 0px;
         margin-left: 15px;
         margin-bottom: 0px;
     }   
+    &__part-of-menu{
+        font-size: 18px;
+        color: gray;
+        font-weight: 700;
+        margin-left: 15px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+    &__price-meal{
+        margin-right: 20px;
+        padding-top: 40px;
+    }
+
 }   
 
 

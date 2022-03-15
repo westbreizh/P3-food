@@ -1,9 +1,21 @@
 header{
-    padding-top: 30px;
-    img{
-    display: block;
-    width: 200px;
-    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 20px;
+        img{
+        display: block;
+        margin: auto;
+        width: 200px;}
+}
+
+.header{
+    &__menu{
+        display: flex;
+        align-items: center;
+        
+        i{
+            font-size: 25px;
+            padding-left: 20px;
+        }
     }
 }
 
@@ -22,8 +34,8 @@ form{
         width: 15px;
         height: 15px;
         font-size: 15px;
-
     }
+
     input{
         background-color: rgb(238, 231, 231);
         border: none; 

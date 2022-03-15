@@ -1,4 +1,4 @@
-.btn{
+.button__fonctionnement{
     display: flex;
     align-items: center;
     height: 80px;
@@ -7,10 +7,37 @@
     margin-bottom: 25px;
     border-radius: 20px;
     background-color: $colour-fourth;
+    @include shadow-button;
     i{
         width: 20px;
         height: auto;
         color: #acacac;
         font-size: 1em;
+    }
+}
+
+ .button__meal{
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    margin: 15px;
+    padding-top: 7px;
+    border-radius: 20px;
+    background-color: white;
+    @include shadow-button;
+}
+
+
+
+
+.button{
+    &__presentation{
+        display: inline-block;
+        color:white;
+        background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+        padding: 15px;
+        border-radius: 30px;
+        font-size: 1rem;
+        @include shadow-button;
     }
 }

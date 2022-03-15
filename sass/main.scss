@@ -1,13 +1,14 @@
 @import "./Base/typographie";
 @import "./Utils/variables";
+@import "./Utils/mixins";
 @import "./Layout/header";
 @import "./Layout/footer";
 @import "./Layout/section-cards-restaurant";
 @import "./Pages/accueil";
 @import "./Composants/bubble";
 @import "./Composants/button";
-
-
+@import "./Composants/underscore";
+@import "./Pages/menu"
 
 
 
