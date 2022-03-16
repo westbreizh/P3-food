@@ -1,5 +1,5 @@
 .menu{
-    padding-top: Opx;
+    padding-top: 0em;
     img{
         position: relative;
         z-index: 1;
@@ -9,7 +9,7 @@
 }
 
 .card-menu{
-    position: absolute;
+    position: relative;
     z-index: 2;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;

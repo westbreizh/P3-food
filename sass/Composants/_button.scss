@@ -14,11 +14,16 @@
         color: #acacac;
         font-size: 1em;
     }
+    @include desktop{
+        flex-basis: 25%;
+        max-width: 650px;
+        min-width: 285px;
+        padding-right: 20px;
+    }
 }
 
  .button__meal{
     display: flex;
-    justify-content: space-between;
     height: 75px;
     margin: 15px;
     padding-top: 7px;
@@ -31,7 +36,7 @@
 
 
 .button{
-    &__presentation{
+    &__presentation, &__commander{
         display: inline-block;
         color:white;
         background: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
@@ -39,5 +44,15 @@
         border-radius: 30px;
         font-size: 1rem;
         @include shadow-button;
+    }
+}
+.button{
+    &__commander{
+        display: block;
+        width: 160px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 90px;
+        text-align: center;
     }
 }

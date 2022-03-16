@@ -1,11 +1,21 @@
 
-.section__presentation{
+.section{
+    &__presentation{
     text-align: center;
     padding-top: 40px;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
+    padding-bottom: 40px;
     background-color:$colour-fourth;
+    }
+    &__fonctionnement-area-button{
+        @include desktop{
+            display: flex;
+            flex-basis: 30%;
+            flex-wrap: wrap;
+        }
+    }
+
 }
+
 
 
 
