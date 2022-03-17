@@ -2,6 +2,11 @@
     box-shadow: 5px 5px 5px rgb(194, 191, 191);
 }
 
+@mixin shadow-button-hover {
+    box-shadow: 7px 7px 7px rgb(194, 191, 191);
+}
+
+
 @mixin desktop {
     @media screen and (min-width : map-get($breakpoints, desktop)) {
         @content;

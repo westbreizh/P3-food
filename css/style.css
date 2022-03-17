@@ -8,7 +8,7 @@ a {
   color: black;
 }
 
-h1, h2 {
+h1 {
   font-size: 1.5rem;
   font-weight: 800;
   margin: 10px 40px 20px 40px;
@@ -20,7 +20,9 @@ h1, h2 {
 }
 
 h2 {
-  margin: 0px 0px 20px 20px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 20px 0px 20px 20px;
 }
 @media screen and (min-width: 599px) {
   h2 {
@@ -143,11 +145,32 @@ footer img {
   margin-bottom: 8px;
 }
 
-.section__cards-restaurant {
+.section-restaurants {
   background-color: #f6f6f6;
   padding-bottom: 70px;
 }
-.section__cards-restaurant img {
+@media screen and (min-width: 599px) {
+  .section-restaurants__zone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.section-restaurants__card-restaurant {
+  display: block;
+  margin: 20px;
+  border-radius: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+  background-color: white;
+}
+@media screen and (min-width: 599px) {
+  .section-restaurants__card-restaurant {
+    flex-basis: 40%;
+    max-width: 800px;
+  }
+}
+.section-restaurants img {
   width: 100%;
   height: 200px;
   border-top-left-radius: 15px;
@@ -155,44 +178,28 @@ footer img {
   object-fit: cover;
 }
 @media screen and (min-width: 599px) {
-  .section__cards-restaurant img {
+  .section-restaurants img {
     flex-basis: 40%;
     max-width: 800px;
-  }
-}
-.section__cards-restaurant i {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  bottom: 35px;
-  left: 85%;
-  font-size: 25px;
-  font-weight: 200;
-  color: gray;
-}
-@media screen and (min-width: 599px) {
-  .section__cards-restaurant__area {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
 
-.a__card-restaurant {
-  display: block;
+.img__under {
   position: relative;
-  margin: 20px;
-  border-radius: 15px;
-  padding-bottom: 20px;
-  margin-bottom: 0px;
-  background-color: white;
-  box-shadow: 5px 5px 5px #c2bfbf;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
-@media screen and (min-width: 599px) {
-  .a__card-restaurant {
-    flex-basis: 40%;
-    max-width: 800px;
-  }
+.img__under i {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  font-weight: 200;
+  color: gray;
+  margin-right: 20px;
+}
+.img__under i:hover {
+  display: none;
 }
 
 .new {
@@ -202,8 +209,8 @@ footer img {
   font-weight: 500;
   padding: 7px 15px;
   position: absolute;
-  bottom: 235px;
-  left: 65%;
+  bottom: 210px;
+  left: 68%;
 }
 
 .section__presentation {
@@ -215,7 +222,6 @@ footer img {
 @media screen and (min-width: 599px) {
   .section__fonctionnement-area-button {
     display: flex;
-    flex-basis: 30%;
     flex-wrap: wrap;
   }
 }
@@ -246,6 +252,16 @@ footer img {
   background-color: #f6f6f6;
   box-shadow: 5px 5px 5px #c2bfbf;
 }
+.button__fonctionnement:hover {
+  background-color: #f7e7ff;
+  box-shadow: 7px 7px 7px #c2bfbf;
+}
+.button__fonctionnement:hover i {
+  color: #a16be0;
+}
+.button__fonctionnement:hover .bubble {
+  background-color: #a16be0;
+}
 .button__fonctionnement i {
   width: 20px;
   height: auto;
@@ -263,7 +279,9 @@ footer img {
 
 .button__meal {
   display: flex;
+  justify-content: space-between;
   height: 75px;
+  max-width: 400px;
   margin: 15px;
   padding-top: 7px;
   border-radius: 20px;
@@ -274,11 +292,15 @@ footer img {
 .button__presentation, .button__commander {
   display: inline-block;
   color: white;
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-color: #FF79DA;
   padding: 15px;
   border-radius: 30px;
   font-size: 1rem;
   box-shadow: 5px 5px 5px #c2bfbf;
+}
+.button__presentation:hover, .button__commander:hover {
+  background-color: #ff93e1;
+  box-shadow: 7px 7px 7px #c2bfbf;
 }
 
 .button__commander {
@@ -305,6 +327,7 @@ footer img {
   z-index: 1;
   width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 
 .card-menu {
@@ -321,6 +344,11 @@ footer img {
   align-items: baseline;
   justify-content: space-between;
 }
+@media screen and (min-width: 599px) {
+  .card-menu__header {
+    justify-content: left;
+  }
+}
 .card-menu__header i {
   width: 25px;
   height: 25px;
@@ -328,6 +356,7 @@ footer img {
   color: gray;
   font-weight: 200;
   margin-right: 35px;
+  margin-left: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */

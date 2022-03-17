@@ -1,7 +1,19 @@
 $colour-primary:#9356DC;
+$colour-primary-light: lighten($colour-primary,5%);
+
 $colour-secondary:#FF79DA;
+$colour-secondary-light: lighten($colour-secondary,5%);
+
 $colour-third:#99E2D0;
+
 $colour-fourth:#f6f6f6;
+$colour-fourth-light:#f7e7ff;
+
+
+$colour-gradient: linear-gradient(to bottom right, $colour-secondary, $colour-primary);
+$colour-gradient-light: linear-gradient(to bottom right, $colour-secondary-light, $colour-primary-light);
+
+
 
 $breakpoints: (
  desktop: 599px

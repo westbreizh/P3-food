@@ -1,7 +1,31 @@
-.section__cards-restaurant{
+.section-restaurants{
     background-color: $colour-fourth;
     padding-bottom: 70px;
-    img{
+
+    &__zone{
+        
+        @include desktop{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            }
+        }      
+    
+    &__card-restaurant{
+        display: block;
+        margin: 20px;
+        border-radius: 15px;
+        padding-bottom: 20px;
+        margin-bottom: 0px; 
+        background-color: white;
+        @include desktop{
+            flex-basis: 40%;
+            max-width: 800px;
+        }
+
+     }
+
+     img{
         width: 100%;
         height: 200px;
         border-top-left-radius: 15px ;
@@ -10,46 +34,33 @@
         @include desktop{
             flex-basis: 40%;
             max-width: 800px;
-         }
-    }
-    i{
-        width: 25px;
-        height: 25px;
-        position: absolute;
-        bottom: 35px;
-        left: 85%;
-        font-size: 25px;
-        font-weight: 200;
-        color:gray;
-        }
-        &__area{
-            @include desktop{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
             }
-        }        
-}
-
-
-.a{
-    &__card-restaurant{
-        display: block;
-        position: relative;
-        margin: 20px;
-        border-radius: 15px;
-        padding-bottom: 20px;
-        margin-bottom: 0px; 
-        background-color: white;
-        @include shadow-button;
-        @include desktop{
-            flex-basis: 40%;
-            max-width: 800px;
         }
 
-    }
 }
 
+
+
+.img__under{
+    position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        i{
+            width: 25px;
+            height: 25px;
+            font-size: 25px;
+            font-weight: 200;
+            color:gray;
+            margin-right: 20px;
+            
+            &:hover{
+                display:none;
+                } 
+        }                                          //fill: $colour-gradient;//
+    }   
+    
 
 .new{
     background-color:#8fe9d1;
@@ -58,6 +69,6 @@
     font-weight: 500;
     padding: 7px 15px;
     position: absolute;
-    bottom: 235px;
-    left: 65%;
+    bottom: 210px;
+    left: 68%;
 }
