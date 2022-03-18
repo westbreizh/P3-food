@@ -236,9 +236,30 @@ footer img {
   text-align: center;
   margin-left: -10px;
   margin-right: 20px;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 .bubble div {
   padding-top: 5px;
+}
+
+.bubble__order {
+  opacity: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  color: #99E2D0;
+  font-weight: bolder;
+  text-align: center;
+}
+.bubble__order i {
+  transition-property: all;
+  transition-duration: 0.5s;
+  opacity: 0;
+  padding-top: 5px;
+  font-weight: 900;
+  transform: rotate(0.5turn);
 }
 
 .button__fonctionnement {
@@ -250,6 +271,8 @@ footer img {
   margin-bottom: 25px;
   border-radius: 20px;
   background-color: #f6f6f6;
+  transition-property: all;
+  transition-duration: 0.5s;
   box-shadow: 5px 5px 5px #c2bfbf;
 }
 .button__fonctionnement:hover {
@@ -267,6 +290,8 @@ footer img {
   height: auto;
   color: #acacac;
   font-size: 1em;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 @media screen and (min-width: 599px) {
   .button__fonctionnement {
@@ -279,13 +304,48 @@ footer img {
 
 .button__meal {
   display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+.button__meal:hover .button__meal__text {
+  width: 70%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.button__meal:hover .button__meal__order {
+  width: 20%;
+}
+.button__meal:hover .bubble__order {
+  opacity: 1;
+}
+.button__meal:hover .bubble__order i {
+  transform: rotate(2turn);
+  opacity: 1;
+}
+.button__meal__text {
+  display: flex;
   justify-content: space-between;
   height: 75px;
-  max-width: 400px;
-  margin: 15px;
+  width: 90%;
   padding-top: 7px;
   border-radius: 20px;
   background-color: white;
+  box-shadow: 5px 5px 5px #c2bfbf;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.button__meal__order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  height: 82px;
+  width: 0%;
+  max-width: 100px;
+  background-color: #99E2D0;
+  transition-property: all;
+  transition-duration: 0.5s;
   box-shadow: 5px 5px 5px #c2bfbf;
 }
 
@@ -296,6 +356,8 @@ footer img {
   padding: 15px;
   border-radius: 30px;
   font-size: 1rem;
+  transition-property: all;
+  transition-duration: 0.5s;
   box-shadow: 5px 5px 5px #c2bfbf;
 }
 .button__presentation:hover, .button__commander:hover {
@@ -317,6 +379,7 @@ footer img {
   height: 5px;
   border-top: solid 5px #99E2D0;
   margin-left: 15px;
+  margin-bottom: 15px;
 }
 
 .menu {

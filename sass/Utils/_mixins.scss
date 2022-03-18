@@ -13,3 +13,12 @@
     }   
 }
 
+@mixin transition-button {
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+@mixin transition-button-slower {
+    transition-property: all;
+    transition-duration: 2s;
+}

@@ -8,7 +8,28 @@
     text-align: center;
     margin-left: -10px;
     margin-right: 20px;
+    @include transition-button;
     div{
         padding-top: 5px;
+    }
+}
+
+.bubble__order{
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    color:$colour-third;
+    font-weight: bolder;
+    text-align: center;
+ 
+    i{
+        @include transition-button;
+        opacity: 0;
+        padding-top: 5px;
+        font-weight: 900;
+        transform: rotate(0.5turn);
+        
     }
 }

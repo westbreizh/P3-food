@@ -7,6 +7,7 @@
     margin-bottom: 25px;
     border-radius: 20px;
     background-color: $colour-fourth;
+    @include transition-button;
     @include shadow-button;
     &:hover{
         background-color: $colour-fourth-light;
@@ -25,6 +26,7 @@
         height: auto;
         color: #acacac;
         font-size: 1em;
+        @include transition-button;
     }
     @include desktop{
         flex-basis: 25%;
@@ -35,16 +37,62 @@
 }
 
  .button__meal{
+
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    &:hover{
+    .button__meal__text{
+        width: 70%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        }
+    .button__meal__order{
+        width: 20%;
+    }
+    .bubble__order{
+        opacity: 1;
+        i{
+            transform: rotate(2turn);
+            opacity: 1;
+        }
+    }
+   
+    }
+
+    &__text{
     display: flex;
     justify-content: space-between;
     height: 75px;
-    max-width: 400px;
-    margin: 15px;
+    width: 90%;
     padding-top: 7px;
     border-radius: 20px;
     background-color: white;
     @include shadow-button;
+    @include transition-button;
+    }
+    &__order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 82px;
+    width: 0%;
+    max-width: 100px;
+    background-color: $colour-third;
+    @include transition-button;
+    @include shadow-button;
+    }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -57,6 +105,7 @@
         padding: 15px;
         border-radius: 30px;
         font-size: 1rem;
+        @include transition-button;
         @include shadow-button;
         &:hover{
             background-color: $colour-secondary-light;           //$colour-gradient-light//
