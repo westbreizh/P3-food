@@ -9,6 +9,7 @@
     background-color: $colour-fourth;
     @include transition-button;
     @include shadow-button;
+
     &:hover{
         background-color: $colour-fourth-light;
         @include shadow-button-hover ;
@@ -18,7 +19,6 @@
         .bubble{
             background-color: $colour-primary-light;
         }
-
     }
 
     i{
@@ -28,6 +28,7 @@
         font-size: 1em;
         @include transition-button;
     }
+
     @include desktop{
         flex-basis: 25%;
         max-width: 650px;
@@ -36,7 +37,7 @@
     }
 }
 
- .button__meal{
+.button__meal{
 
     display: flex;
     justify-content: center;
@@ -93,9 +94,25 @@
 }
 
 
+/*.buttons-list-meal :nth-child(3){
+    animation-name: button-meal-animation;
+    animation-duration: 1s;
+}
+*/
 
-.button{
-    &__presentation, &__commander{
+.first, .second, .third{
+    animation-name: button-meal-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+}
+.second{
+    animation-delay: 0.2s;
+}
+.third{
+    animation-delay: 0.4s;
+}
+
+.button__presentation, .button__commander{
         display: inline-block;
         color:white;
         background-color: $colour-secondary ;     //$colour-gradient//
@@ -108,15 +125,13 @@
             background-color: $colour-secondary-light;           //$colour-gradient-light//
             @include shadow-button-hover ;
         }
-    }
 }
-.button{
-    &__commander{
-        display: block;
-        width: 160px;
-        margin: auto;
-        margin-top: 60px;
-        margin-bottom: 90px;
-        text-align: center;
-    }
+
+.button__commander{
+    display: block;
+    width: 160px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    text-align: center;
 }

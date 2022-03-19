@@ -1,7 +1,7 @@
 @keyframes button-meal-animation {
   0% {
-    transform: translateY(20px);
-    opacity: 0.3;
+    transform: translateY(30px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0px);
@@ -293,7 +293,7 @@ footer img {
 }
 .button__fonctionnement:hover {
   background-color: #f7e7ff;
-  box-shadow: 7px 7px 7px #c2bfbf;
+  box-shadow: 8px 8px 8px #c2bfbf;
 }
 .button__fonctionnement:hover i {
   color: #a16be0;
@@ -371,6 +371,25 @@ footer img {
   opacity: 1;
 }
 
+/*.buttons-list-meal :nth-child(3){
+    animation-name: button-meal-animation;
+    animation-duration: 1s;
+}
+*/
+.first, .second, .third {
+  animation-name: button-meal-animation;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.second {
+  animation-delay: 0.2s;
+}
+
+.third {
+  animation-delay: 0.4s;
+}
+
 .button__presentation, .button__commander {
   display: inline-block;
   color: white;
@@ -384,7 +403,7 @@ footer img {
 }
 .button__presentation:hover, .button__commander:hover {
   background-color: #ff93e1;
-  box-shadow: 7px 7px 7px #c2bfbf;
+  box-shadow: 8px 8px 8px #c2bfbf;
 }
 
 .button__commander {
@@ -441,7 +460,6 @@ footer img {
   color: gray;
   font-weight: 200;
   margin-right: 35px;
-  margin-left: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
