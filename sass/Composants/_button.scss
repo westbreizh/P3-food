@@ -39,61 +39,58 @@
  .button__meal{
 
     display: flex;
-    align-items: center;
-    max-width: 400px;
-    &:hover{
-    .button__meal__text{
-        width: 70%;
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-        }
-    .button__meal__order{
-        width: 20%;
-    }
-    .bubble__order{
-        opacity: 1;
-        i{
-            transform: rotate(2turn);
-            opacity: 1;
-        }
-    }
-   
-    }
-
-    &__text{
-    display: flex;
-    justify-content: space-between;
-    height: 75px;
-    width: 90%;
-    padding-top: 7px;
-    border-radius: 20px;
-    background-color: white;
-    @include shadow-button;
-    @include transition-button;
-    }
-    &__order{
-    display: flex;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    height: 82px;
-    width: 0%;
-    max-width: 100px;
-    background-color: $colour-third;
-    @include transition-button;
-    @include shadow-button;
+    max-width: 400px;
+    margin: 10px;
+    animation-name: button-meal-animation;
+    animation-duration: 1s;
+     
+    &__text{
+        display: flex;
+        justify-content: space-between;
+        height: 75px;
+        width: 100%;
+        padding-top: 7px;
+        border-radius: 20px;
+        background-color: white;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @include shadow-button;
+        @include transition-button;
     }
+    &__order{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        height: 82px;
+        width: 0%;
+        max-width: 100px;
+        background-color: $colour-third;
+        @include transition-button;
+        @include shadow-button;
+    }
+
+    &:hover{
+        .button__meal__text{
+            width: 80%;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            }
+        .button__meal__order{
+            width: 20%;
+        }
+        .bubble__order{
+            opacity: 1;
+            i{
+                transform: rotate(2turn);
+                opacity: 1;
+            }
+        }
+   }
 }
-
-
-
-
-
-
-
-
-
 
 
 

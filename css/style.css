@@ -1,3 +1,13 @@
+@keyframes button-meal-animation {
+  0% {
+    transform: translateY(20px);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
@@ -45,6 +55,9 @@ h3 {
   margin-left: 20px;
 }
 .h3__name-restaurant, .h3__title-meal {
+  max-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 17px;
   font-weight: 900;
   margin-bottom: 8px;
@@ -52,6 +65,9 @@ h3 {
   margin-top: 10px;
 }
 .h3__locate-restaurant, .h3__informations-meal {
+  max-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 17px;
   font-weight: 390;
   margin-top: 0px;
@@ -304,32 +320,23 @@ footer img {
 
 .button__meal {
   display: flex;
+  justify-content: center;
   align-items: center;
   max-width: 400px;
-}
-.button__meal:hover .button__meal__text {
-  width: 70%;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-.button__meal:hover .button__meal__order {
-  width: 20%;
-}
-.button__meal:hover .bubble__order {
-  opacity: 1;
-}
-.button__meal:hover .bubble__order i {
-  transform: rotate(2turn);
-  opacity: 1;
+  margin: 10px;
+  animation-name: button-meal-animation;
+  animation-duration: 1s;
 }
 .button__meal__text {
   display: flex;
   justify-content: space-between;
   height: 75px;
-  width: 90%;
+  width: 100%;
   padding-top: 7px;
   border-radius: 20px;
   background-color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
   box-shadow: 5px 5px 5px #c2bfbf;
   transition-property: all;
   transition-duration: 0.5s;
@@ -347,6 +354,21 @@ footer img {
   transition-property: all;
   transition-duration: 0.5s;
   box-shadow: 5px 5px 5px #c2bfbf;
+}
+.button__meal:hover .button__meal__text {
+  width: 80%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.button__meal:hover .button__meal__order {
+  width: 20%;
+}
+.button__meal:hover .bubble__order {
+  opacity: 1;
+}
+.button__meal:hover .bubble__order i {
+  transform: rotate(2turn);
+  opacity: 1;
 }
 
 .button__presentation, .button__commander {

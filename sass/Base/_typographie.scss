@@ -45,6 +45,9 @@ h3{
         margin-left: 20px;
     }  
     &__name-restaurant, &__title-meal{
+        max-height: 20px;
+        overflow: hidden;
+        text-overflow:ellipsis;
         font-size: 17px;
         font-weight: 900;
         margin-bottom: 8px;
@@ -52,6 +55,9 @@ h3{
         margin-top: 10px;
     } 
     &__locate-restaurant, &__informations-meal{
+        max-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 17px;
         font-weight: 390;
         margin-top: 0px;
