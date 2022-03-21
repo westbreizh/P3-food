@@ -1,3 +1,73 @@
+
+@keyframes main-is-waiting{
+    0%{
+        opacity: 0;
+    }
+    95%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes loading-go-out{
+    0%{
+        opacity: 50%;
+    }
+    85%{
+        opacity: 1;
+
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
+
+@keyframes loading-circle {
+    0%{
+    opacity: 0;
+    transform: rotate(0turn);
+    }
+    25%{
+        opacity: 1;
+        transform: rotate(1turn);
+        }
+    50%{
+        opacity: 0,2;
+        transform: rotate(1.5turn);
+        }
+    75%{
+        opacity: 1;
+        transform: rotate(3turn);
+        }
+    
+    100%{
+        opacity: 1;
+        } 
+
+
+}
+
+@keyframes loading-icones {
+    0%{
+    opacity: 0;
+    transform: scale(0);
+    }
+  
+    57%,100%{
+    opacity: 1;
+    color: $colour-secondary;
+    transform: scale(1);
+    } 
+}
+
+
+
 @keyframes button-meal-animation {
     0%{
     transform: translateY(30px);
@@ -8,3 +78,4 @@
         opacity: 1;
     }
 }
+
