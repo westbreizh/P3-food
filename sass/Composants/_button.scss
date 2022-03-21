@@ -115,14 +115,13 @@
 .button__presentation, .button__commander{
         display: inline-block;
         color:white;
-        background: $colour-gradient;     //$colour-gradient//
+        background: $colour-gradient;     
         padding: 15px;
         border-radius: 30px;
         font-size: 1rem;
-        @include transition-button;
         @include shadow-button;
         &:hover{
-            background-color: $colour-secondary-light;           //$colour-gradient-light//
+            background: $colour-gradient-light;           
             @include shadow-button-hover ;
         }
 }

@@ -41,12 +41,11 @@
 
 
 
-.img__under{
+.img__under, .card-menu__header{
     position: relative;
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-
         i{
             width: 25px;
             height: 25px;
@@ -56,11 +55,17 @@
             margin-right: 20px;
             
             &:hover{
-                display:none;
+                font-weight: bold;
+                background:$colour-gradient;
+                background-clip: text;
+                color: transparent;
+          
                 } 
-        }                                          //fill: $colour-gradient;//
+        }                                     
     }   
-    
+
+
+
 
 .new{
     background-color:#8fe9d1;

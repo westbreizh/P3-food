@@ -12,12 +12,15 @@
 @keyframes loading-go-out {
   0% {
     opacity: 50%;
+    transform: scale(1);
   }
   85% {
     opacity: 1;
+    transform: scale(1);
   }
   100% {
     opacity: 0;
+    transform: scale(0);
   }
 }
 @keyframes loading-circle {
@@ -68,7 +71,7 @@
   padding-top: 150px;
   padding-bottom: 700px;
   animation-name: loading-go-out;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 .loading__circle-contenair {
@@ -82,7 +85,7 @@
   height: 50px;
   font-size: 50px;
   animation-name: loading-circle;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 .loading__icones {
   display: flex;
@@ -100,33 +103,33 @@
 .loading__icones :nth-child(1) {
   color: gray;
   animation-name: loading-icones;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .loading__icones :nth-child(2) {
   color: gray;
   animation-name: loading-icones;
   animation-delay: 0.5s;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .loading__icones :nth-child(3) {
   color: gray;
   animation-name: loading-icones;
   animation-delay: 1s;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .loading__icones :nth-child(4) {
   color: gray;
   animation-name: loading-icones;
   animation-delay: 1.5s;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 main {
   animation-name: main-is-waiting;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 body {
@@ -322,13 +325,13 @@ footer img {
   }
 }
 
-.img__under {
+.img__under, .card-menu__header {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
 }
-.img__under i {
+.img__under i, .card-menu__header i {
   width: 25px;
   height: 25px;
   font-size: 25px;
@@ -336,8 +339,11 @@ footer img {
   color: gray;
   margin-right: 20px;
 }
-.img__under i:hover {
-  display: none;
+.img__under i:hover, .card-menu__header i:hover {
+  font-weight: bold;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
 }
 
 .new {
@@ -519,12 +525,10 @@ footer img {
   padding: 15px;
   border-radius: 30px;
   font-size: 1rem;
-  transition-property: all;
-  transition-duration: 0.5s;
   box-shadow: 5px 5px 5px #c2bfbf;
 }
 .button__presentation:hover, .button__commander:hover {
-  background-color: #ff93e1;
+  background: linear-gradient(to bottom right, #ff93e1, #a16be0);
   box-shadow: 8px 8px 8px #c2bfbf;
 }
 
@@ -570,11 +574,6 @@ footer img {
   align-items: baseline;
   justify-content: space-between;
 }
-@media screen and (min-width: 599px) {
-  .card-menu__header {
-    justify-content: left;
-  }
-}
 .card-menu__header i {
   width: 25px;
   height: 25px;
@@ -582,6 +581,21 @@ footer img {
   color: gray;
   font-weight: 200;
   margin-right: 35px;
+}
+
+@media screen and (min-width: 599px) {
+  .contenair-menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 599px) {
+  .part-of-menu {
+    flex-basis: 30%;
+    min-width: 285px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

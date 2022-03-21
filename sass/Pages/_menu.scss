@@ -21,9 +21,7 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        @include desktop{
-            justify-content: left;
-        }
+
         i{  
         width: 25px;
         height: 25px;
@@ -34,4 +32,18 @@
         }
     }
 
+}
+
+.contenair-menu{
+    @include desktop{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+.part-of-menu{
+    @include desktop{
+    flex-basis: 30%;
+    min-width: 285px;
+    }
 }
