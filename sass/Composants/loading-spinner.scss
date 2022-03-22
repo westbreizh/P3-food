@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: gray;
     i{
         width: 25px;
         height: 25px;
@@ -37,40 +38,14 @@
 }
 
 
-.loading__icones :nth-child(1){
-
-    color: gray;
+@for $i from 1 through 4 {
+    .loading__icones :nth-child(#{$i}) {
     animation-name: loading-icones;
     animation-duration: $loading-duration;
+    animation-delay: $i*0.5s-0.5s;
+    }
 }
-
-.loading__icones :nth-child(2){
-
-        color: gray;
-        animation-name: loading-icones;
-        animation-delay: 0.5s;
-        animation-duration: $loading-duration;
-}
-
-.loading__icones :nth-child(3){
-
-    color: gray;
-    animation-name: loading-icones;
-    animation-delay: 1s;
-    animation-duration: $loading-duration;
-}
-
-.loading__icones :nth-child(4){
-
-    color: gray;
-    animation-name: loading-icones;
-    animation-delay: 1.5s;
-    animation-duration: $loading-duration;
-}
-
 
 main{
-    animation-name: main-is-waiting;
-    animation-duration: $loading-duration;
-
+    animation: main-is-waiting 3s ;
 }

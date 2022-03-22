@@ -71,7 +71,7 @@
   padding-top: 150px;
   padding-bottom: 700px;
   animation-name: loading-go-out;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 .loading__circle-contenair {
@@ -85,12 +85,13 @@
   height: 50px;
   font-size: 50px;
   animation-name: loading-circle;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 .loading__icones {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: gray;
 }
 .loading__icones i {
   width: 25px;
@@ -101,35 +102,31 @@
 }
 
 .loading__icones :nth-child(1) {
-  color: gray;
   animation-name: loading-icones;
-  animation-duration: 2s;
+  animation-duration: 3s;
+  animation-delay: 0s;
 }
 
 .loading__icones :nth-child(2) {
-  color: gray;
   animation-name: loading-icones;
+  animation-duration: 3s;
   animation-delay: 0.5s;
-  animation-duration: 2s;
 }
 
 .loading__icones :nth-child(3) {
-  color: gray;
   animation-name: loading-icones;
+  animation-duration: 3s;
   animation-delay: 1s;
-  animation-duration: 2s;
 }
 
 .loading__icones :nth-child(4) {
-  color: gray;
   animation-name: loading-icones;
+  animation-duration: 3s;
   animation-delay: 1.5s;
-  animation-duration: 2s;
 }
 
 main {
-  animation-name: main-is-waiting;
-  animation-duration: 2s;
+  animation: main-is-waiting 3s;
 }
 
 body {
