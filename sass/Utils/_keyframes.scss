@@ -25,11 +25,8 @@
     100%{
         opacity: 0;
         transform: scale(0);
-
     }
 }
-
-
 
 
 @keyframes loading-circle {
@@ -53,9 +50,8 @@
     100%{
         opacity: 1;
         } 
-
-
 }
+
 
 @keyframes loading-icones {
     0%{
@@ -69,7 +65,6 @@
     transform: scale(1);
     } 
 }
-
 
 
 @keyframes button-meal-animation {

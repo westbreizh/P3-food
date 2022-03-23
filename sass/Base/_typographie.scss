@@ -9,13 +9,11 @@ a{
     color: black;
 }
 
-
 h1{
-        font-size: 1.5rem;
-        font-weight: 800;
-        margin:10px 40px 20px 40px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin:10px 40px 20px 40px;
 } 
-
 
 .h1{
     &__menu{
@@ -24,22 +22,19 @@ h1{
     }
 }
 
-
 h2{        
     font-size: 1.5rem;
     font-weight: 800;
-    margin:20px 0px 20px 20px;
+    margin:30px 0px 20px 20px;
     @include desktop{
         margin-bottom: 50px;
         margin-left: 20px;
     }
 }
 
-
 h3{ 
     font-size: 1.2rem;
 }
-
 
 .h3{ 
      &__presentation{
