@@ -39,7 +39,7 @@
         transform: rotate(1turn);
         }
     50%{
-        opacity: 0,2;
+        opacity: 0.8;
         transform: rotate(1.5turn);
         }
     75%{
@@ -51,7 +51,6 @@
         opacity: 1;
         } 
 }
-
 
 @keyframes loading-icones {
     0%{
@@ -78,3 +77,12 @@
     }
 }
 
+@keyframes heart-aparring{
+    0%{
+        opacity: 0.4;
+    }
+
+    100%{
+        opacity: 1.5;
+    }
+}

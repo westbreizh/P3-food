@@ -25,11 +25,21 @@ h1{
 h2{        
     font-size: 1.5rem;
     font-weight: 800;
-    margin:30px 0px 20px 20px;
+    margin:40px 0px 30px 20px;
     @include desktop{
         margin-bottom: 50px;
         margin-left: 20px;
     }
+}
+
+.h2__part-of-menu{
+    font-size: 18px;
+    color: gray;
+    font-weight: 700;
+    margin-left: 15px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 45px;
 }
 
 h3{ 
@@ -48,44 +58,33 @@ h3{
     }  
     &__name-restaurant, &__title-meal{
         max-height: 20px;
-        overflow: hidden;
-        text-overflow:ellipsis;
         font-size: 17px;
         font-weight: 900;
         margin-bottom: 8px;
         margin-left: 15px;
         margin-top: 10px;
     } 
-    &__locate-restaurant, &__informations-meal{
-        max-height: 20px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 17px;
-        font-weight: 390;
-        margin-top: 0px;
-        margin-left: 15px;
-        margin-bottom: 0px;
-    }   
-    &__part-of-menu{
-        font-size: 18px;
-        color: gray;
-        font-weight: 700;
-        margin-left: 15px;
-        text-transform: uppercase;
-        margin-bottom: 5px;
-        margin-top: 45px;
-    }
-    &__price-meal{
-        margin-right: 20px;
-        padding-top: 40px;
-    }
 
 }   
 
+.h4 {
+    &__locate-restaurant, &__informations-meal{
+    max-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(78, 76, 76);
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    }   
+}
 
-
-
-
-
+.price-meal{
+    margin-right: 20px;
+    padding-top: 40px;
+}
 
 

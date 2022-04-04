@@ -1,6 +1,7 @@
 .section-restaurants{
     background-color: $colour-fourth;
     padding-bottom: 70px;
+    padding-top: 10px;
 
     &__zone{
         
@@ -58,6 +59,8 @@
                 background:$colour-gradient;
                 background-clip: text;
                 color: transparent;
+                animation-name: heart-aparring;
+                animation-duration: 1s;
           
                 } 
         }                                     

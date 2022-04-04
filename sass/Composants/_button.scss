@@ -43,9 +43,6 @@
     align-items: center;
     max-width: 400px;
     margin: 10px;
-    animation-name: button-meal-animation;
-    animation-duration: 1s;
-     
     &__text{
         display: flex;
         justify-content: space-between;
@@ -54,10 +51,13 @@
         padding-top: 7px;
         border-radius: 20px;
         background-color: white;
-        overflow: hidden;
-        text-overflow: ellipsis;
         @include shadow-button;
         @include transition-button;
+        :nth-child(1){
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
     }
     &__order{
         display: flex;
@@ -93,18 +93,6 @@
 }
 
 
-.first, .second, .third{
-    animation-name: button-meal-animation;
-    animation-duration: 0.5s;
-    animation-fill-mode: backwards;
-}
-.second{
-    animation-delay: 0.2s;
-}
-.third{
-    animation-delay: 0.4s;
-}
-
 .button__presentation, .button__commander{
         display: inline-block;
         color:white;
@@ -126,4 +114,22 @@
     margin-top: 60px;
     margin-bottom: 90px;
     text-align: center;
+}
+
+.button__meal{
+    animation-name: button-meal-animation;
+    animation-duration: 0.9s;
+    animation-fill-mode: backwards;
+}
+
+@for $i from 1 through 3 {
+    .entree :nth-child(#{$i}) {
+    animation-delay: $i*0.3s-0.3s;
+    }
+    .meal :nth-child(#{$i}) {
+        animation-delay: $i*0.3-0.3s;
+        }
+    .dessert :nth-child(#{$i}) {
+        animation-delay: $i*0.3s-0.3s;
+        }
 }
