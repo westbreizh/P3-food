@@ -3,7 +3,7 @@
     0%{
         opacity: 0;
     }
-    95%{
+    90%{
         opacity: 0;
 
     }
@@ -12,7 +12,7 @@
     }
 }
 
-@keyframes loading-go-out{
+@keyframes loading-come-and-go-out{
     0%{
         opacity: 50%;
         transform: scale(1);
